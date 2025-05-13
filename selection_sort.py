@@ -1,5 +1,5 @@
 def selection_sort(lista): #Função que implementa o selection sort com a intenção de ordenar a lista
-    tamanho = len(lista) #Obtém o tamanho da lista pra ser usado noa loops
+    tamanho = len(lista) # Obtém o tamanho da lista pra ser usado nos loops
     
     # Percorre cada posição da lista
     for i in range(tamanho):
@@ -13,7 +13,7 @@ def selection_sort(lista): #Função que implementa o selection sort com a inten
         # Trocando os números de lugar
         lista[i], lista[menor] = lista[menor], lista[i]
 
-#main
+# main
 n =  [2, 150, 3, 0, 9, 48, 8, 35, 5] # Cria uma lista desordenada para teste
 selection_sort(n) # Chama a função selection_sort para ordenar a lista n
 print("Lista ordenada: " , n) # Vai mostrar [0, 2, 3, 5, 8, 9, 35, 48, 150]
