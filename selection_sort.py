@@ -1,4 +1,4 @@
-def selection_sort(lista): #Função que implementa o selection sort com a intenção de ordenar a lista
+def selection_sort(lista): # Função que implementa o selection sort com a intenção de ordenar a lista
     tamanho = len(lista) # Obtém o tamanho da lista pra ser usado nos loops
     
     # Percorre cada posição da lista
