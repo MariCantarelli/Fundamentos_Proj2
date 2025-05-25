@@ -1,0 +1,29 @@
+Algoritmo SelectionSort
+    Entrada: Uma lista de números chamada lista
+    Saída: A lista ordenada em ordem crescente
+
+    Função selection_sort(lista)
+        tamanho ← tamanho da lista
+
+        Para i de 0 até tamanho - 1 faça
+            menor ← i  // Supõe que o menor elemento está na posição i
+
+            Para j de i + 1 até tamanho - 1 faça
+                Se lista[j] < lista[menor] então
+                    menor ← j  // Atualiza a posição do menor elemento encontrado
+                FimSe
+            FimPara
+
+            // Troca os elementos das posições i e menor
+            temp ← lista[i]
+            lista[i] ← lista[menor]
+            lista[menor] ← temp
+        FimPara
+    FimFunção
+
+// Programa principal
+Início
+    n ← [2, 150, 3, 0, 9, 48, 8, 35, 5]
+    Chamar selection_sort(n)
+    Escreva "Lista ordenada: ", n
+Fim
